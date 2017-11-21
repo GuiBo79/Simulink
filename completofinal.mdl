@@ -1,0 +1,1223 @@
+Model {
+  Name			  "completofinal"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sat Sep 25 04:34:05 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Gui"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Sep 27 18:54:19 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:7>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "0.3"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "1/80000"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "completofinal"
+    Location		    [2, 70, 1022, 718]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Atuador"
+      Ports		      [1, 1]
+      Position		      [380, 215, 430, 285]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Atuador"
+	Location		[202, 186, 950, 514]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [25, 83, 55, 97]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "\n"
+	  Position		  [430, 115, 460, 145]
+	  Value			  "-15"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "+Vmotor"
+	  Position		  [430, 40, 460, 70]
+	  Value			  "+15"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Comparador"
+	  Position		  [365, 82, 395, 113]
+	  Operator		  "<="
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Filtro RC"
+	  Position		  [500, 202, 560, 238]
+	  Numerator		  "[200]"
+	  Denominator		  "[1 200]"
+	  AbsoluteTolerance	  "auto"
+	  Realization		  "auto"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Ganho para\nRef negativa"
+	  Position		  [230, 219, 275, 261]
+	  Gain			  "0.94"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Portadora do PWM"
+	  Ports			  [0, 1]
+	  Position		  [260, 25, 290, 55]
+	  SourceBlock		  "simulink3/Sources/Repeating\nSequence"
+	  SourceType		  "Repeating table"
+	  rep_seq_t		  "[0 1/40000 1/20000]"
+	  rep_seq_y		  "[-10 10 -10]"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturação"
+	  Position		  [100, 75, 130, 105]
+	  UpperLimit		  "9"
+	  LowerLimit		  "-10"
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope1"
+	  Ports			  [1]
+	  Position		  [580, 204, 610, 236]
+	  Floating		  off
+	  Location		  [6, 60, 1030, 748]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "OneTimeTick"
+	  ZoomMode		  "yonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  Grid			  "on"
+	  TimeRange		  "0.06"
+	  YMin			  "-14.11"
+	  YMax			  "-13.97"
+	  SaveToWorkspace	  off
+	  SaveName		  "ScopeData1"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "5000"
+	  Decimation		  "1"
+	  SampleInput		  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Seleção\nde ganho"
+	  Position		  [305, 180, 335, 210]
+	  Threshold		  "0"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Sinaliza ref\nNegativa"
+	  Position		  [135, 177, 165, 208]
+	  Operator		  ">"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [495, 85, 525, 115]
+	  Threshold		  "0.5"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Valor de cruzamento\ndo ganho"
+	  Position		  [40, 185, 70, 215]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [605, 93, 635, 107]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Comparador"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "+Vmotor"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 35]
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "\n"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Portadora do PWM"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 50]
+	  DstBlock		  "Comparador"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Saturação"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  Points		  [0, 0; 30, 0]
+	  Branch {
+	    Points		    [0, 75; -75, 0]
+	    DstBlock		    "Filtro RC"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Out1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Seleção\nde ganho"
+	  SrcPort		  1
+	  Points		  [0, -90]
+	  DstBlock		  "Comparador"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sinaliza ref\nNegativa"
+	  SrcPort		  1
+	  DstBlock		  "Seleção\nde ganho"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Valor de cruzamento\ndo ganho"
+	  SrcPort		  1
+	  DstBlock		  "Sinaliza ref\nNegativa"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Saturação"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    Points		    [0, 60; -35, 0]
+	    DstBlock		    "Sinaliza ref\nNegativa"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [50, 0; 0, 75]
+	    Branch {
+	      Points		      [0, 75]
+	      DstBlock		      "Ganho para\nRef negativa"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [85, 0]
+	      DstBlock		      "Seleção\nde ganho"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Ganho para\nRef negativa"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Seleção\nde ganho"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Filtro RC"
+	  SrcPort		  1
+	  DstBlock		  "Scope1"
+	  DstPort		  1
+	}
+	Annotation {
+	  Position		  [444, 163]
+	  Text			  "-Vmotor"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Atuador1"
+      Ports		      [1, 1]
+      Position		      [390, 425, 440, 495]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Atuador1"
+	Location		[202, 186, 950, 514]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [25, 83, 55, 97]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "\n"
+	  Position		  [430, 115, 460, 145]
+	  Value			  "-15"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "+Vmotor"
+	  Position		  [430, 40, 460, 70]
+	  Value			  "+15"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Comparador"
+	  Position		  [365, 82, 395, 113]
+	  Operator		  "<="
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Filtro RC"
+	  Position		  [500, 202, 560, 238]
+	  Numerator		  "[200]"
+	  Denominator		  "[1 200]"
+	  AbsoluteTolerance	  "auto"
+	  Realization		  "auto"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Ganho para\nRef negativa"
+	  Position		  [230, 219, 275, 261]
+	  Gain			  "0.94"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Portadora do PWM"
+	  Ports			  [0, 1]
+	  Position		  [260, 25, 290, 55]
+	  SourceBlock		  "simulink3/Sources/Repeating\nSequence"
+	  SourceType		  "Repeating table"
+	  rep_seq_t		  "[0 1/40000 1/20000]"
+	  rep_seq_y		  "[-10 10 -10]"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturação"
+	  Position		  [100, 75, 130, 105]
+	  UpperLimit		  "9"
+	  LowerLimit		  "-10"
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope1"
+	  Ports			  [1]
+	  Position		  [580, 204, 610, 236]
+	  Floating		  off
+	  Location		  [6, 60, 1030, 748]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "OneTimeTick"
+	  ZoomMode		  "yonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  Grid			  "on"
+	  TimeRange		  "0.06"
+	  YMin			  "-14.11"
+	  YMax			  "-13.97"
+	  SaveToWorkspace	  off
+	  SaveName		  "ScopeData1"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "5000"
+	  Decimation		  "1"
+	  SampleInput		  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Seleção\nde ganho"
+	  Position		  [305, 180, 335, 210]
+	  Threshold		  "0"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Sinaliza ref\nNegativa"
+	  Position		  [135, 177, 165, 208]
+	  Operator		  ">"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [495, 85, 525, 115]
+	  Threshold		  "0.5"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Valor de cruzamento\ndo ganho"
+	  Position		  [40, 185, 70, 215]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [605, 93, 635, 107]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Comparador"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "+Vmotor"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 35]
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "\n"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Portadora do PWM"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 50]
+	  DstBlock		  "Comparador"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Saturação"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  Points		  [0, 0; 30, 0]
+	  Branch {
+	    Points		    [0, 75; -75, 0]
+	    DstBlock		    "Filtro RC"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Out1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Seleção\nde ganho"
+	  SrcPort		  1
+	  Points		  [0, -90]
+	  DstBlock		  "Comparador"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sinaliza ref\nNegativa"
+	  SrcPort		  1
+	  DstBlock		  "Seleção\nde ganho"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Valor de cruzamento\ndo ganho"
+	  SrcPort		  1
+	  DstBlock		  "Sinaliza ref\nNegativa"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Saturação"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    Points		    [0, 60; -35, 0]
+	    DstBlock		    "Sinaliza ref\nNegativa"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [50, 0; 0, 75]
+	    Branch {
+	      Points		      [0, 75]
+	      DstBlock		      "Ganho para\nRef negativa"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [85, 0]
+	      DstBlock		      "Seleção\nde ganho"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Ganho para\nRef negativa"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Seleção\nde ganho"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Filtro RC"
+	  SrcPort		  1
+	  DstBlock		  "Scope1"
+	  DstPort		  1
+	}
+	Annotation {
+	  Position		  [444, 163]
+	  Text			  "-Vmotor"
+	}
+      }
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "Degrau Real"
+      Position		      [245, 238, 310, 262]
+      VariableName	      "[v6(:,1),v6(:,2)]"
+      SampleTime	      "0"
+      Interpolate	      on
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "Degrau Real1"
+      Position		      [255, 448, 320, 472]
+      VariableName	      "[v6(:,1),v6(:,2)]"
+      SampleTime	      "0"
+      Interpolate	      on
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "Degrau Real2"
+      Position		      [260, 373, 325, 397]
+      VariableName	      "[V7(:,1),V7(:,2)]"
+      SampleTime	      "0"
+      Interpolate	      on
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      Position		      [725, 457, 765, 493]
+      Gain		      "0.76"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Motor"
+      Ports		      [1, 2]
+      Position		      [500, 220, 540, 280]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Motor"
+	Location		[2, 74, 1014, 722]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [130, 218, 160, 232]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Constante de Torque"
+	  Position		  [370, 129, 430, 181]
+	  Gain			  "23E-3"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Constante de Velocidade"
+	  Position		  [335, 353, 385, 397]
+	  Orientation		  "left"
+	  Gain			  "23E-3"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Parte Elétrica"
+	  Position		  [230, 206, 315, 244]
+	  Numerator		  "[1]"
+	  Denominator		  "[0.66E-3 0.74]"
+	  AbsoluteTolerance	  "auto"
+	  Realization		  "auto"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Parte Mecânica"
+	  Position		  [510, 197, 615, 253]
+	  Numerator		  "[1]"
+	  Denominator		  "[6.2E-6 3.54E-6]"
+	  AbsoluteTolerance	  "auto"
+	  Realization		  "auto"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [185, 215, 205, 235]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [455, 215, 475, 235]
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Torque de Fricção"
+	  Position		  [395, 290, 445, 320]
+	  Value			  "5.6E-3"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [350, 218, 380, 232]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [645, 218, 675, 232]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Parte Elétrica"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Parte Elétrica"
+	  SrcPort		  1
+	  Points		  [0, 0; 10, 0]
+	  Branch {
+	    Points		    [25, 0]
+	    DstBlock		    "Constante de Torque"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    DstBlock		    "Out1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Parte Mecânica"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    Points		    [0, 150]
+	    DstBlock		    "Constante de Velocidade"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constante de Velocidade"
+	  SrcPort		  1
+	  Points		  [-135, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constante de Torque"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Parte Mecânica"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Torque de Fricção"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Motor1"
+      Ports		      [1, 2]
+      Position		      [510, 430, 550, 490]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Motor1"
+	Location		[2, 74, 1014, 722]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [130, 218, 160, 232]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Constante de Torque"
+	  Position		  [370, 129, 430, 181]
+	  Gain			  "23E-3"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Constante de Velocidade"
+	  Position		  [335, 353, 385, 397]
+	  Orientation		  "left"
+	  Gain			  "23E-3"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Parte Elétrica"
+	  Position		  [230, 206, 315, 244]
+	  Numerator		  "[1]"
+	  Denominator		  "[0.66E-3 1.1]"
+	  AbsoluteTolerance	  "auto"
+	  Realization		  "auto"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Parte Mecânica"
+	  Position		  [510, 197, 615, 253]
+	  Numerator		  "[1]"
+	  Denominator		  "[6.2E-6 3.54E-6]"
+	  AbsoluteTolerance	  "auto"
+	  Realization		  "auto"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [185, 215, 205, 235]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [455, 215, 475, 235]
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Torque de Fricção"
+	  Position		  [395, 290, 445, 320]
+	  Value			  "5.6E-3"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [350, 218, 380, 232]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [645, 218, 675, 232]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Parte Elétrica"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Parte Elétrica"
+	  SrcPort		  1
+	  Points		  [0, 0; 10, 0]
+	  Branch {
+	    Points		    [25, 0]
+	    DstBlock		    "Constante de Torque"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    DstBlock		    "Out1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Parte Mecânica"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    Points		    [0, 150]
+	    DstBlock		    "Constante de Velocidade"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constante de Velocidade"
+	  SrcPort		  1
+	  Points		  [-135, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constante de Torque"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Parte Mecânica"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Torque de Fricção"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [2, 1]
+      Position		      [810, 446, 815, 484]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1]
+      Position		      [725, 249, 755, 281]
+      Floating		      off
+      Location		      [8, 55, 616, 732]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "0.06678048632136678"
+      YMin		      "-0.486799"
+      YMax		      "2.46879"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      Ports		      [1]
+      Position		      [845, 449, 875, 481]
+      Floating		      off
+      Location		      [305, 150, 717, 541]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "0.06678048632136678"
+      YMin		      "-0.486799"
+      YMax		      "2.46879"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Sensor\n"
+      Position		      [605, 247, 665, 283]
+      Numerator		      "1.1093"
+      Denominator	      "[1 319.69]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Sensor\n1"
+      Position		      [615, 457, 675, 493]
+      Numerator		      "1.1093"
+      Denominator	      "[1 319.69]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Line {
+      SrcBlock		      "Atuador"
+      SrcPort		      1
+      DstBlock		      "Motor"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Motor"
+      SrcPort		      2
+      DstBlock		      "Sensor\n"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Degrau Real"
+      SrcPort		      1
+      DstBlock		      "Atuador"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sensor\n"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Atuador1"
+      SrcPort		      1
+      DstBlock		      "Motor1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Motor1"
+      SrcPort		      2
+      DstBlock		      "Sensor\n1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Degrau Real1"
+      SrcPort		      1
+      DstBlock		      "Atuador1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "Scope1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sensor\n1"
+      SrcPort		      1
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+  }
+}
